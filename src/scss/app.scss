@@ -1,4 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #6c757d;
+}
 
 .container {
   margin: 50px;
@@ -8,7 +13,7 @@
     color: #fff;
     border-radius: .2em;
     position: relative;
-    width: 30%;
+    max-width: 340px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -33,11 +38,12 @@
   }
   .form-box {
 
-    width: 30%;
+    max-width: 340px;
     border: 1px solid #d6d6d6;
 
     .progress {
       border-radius: 0;
+      height: 0.6rem;
       .progress-bar {
         background-color: #f26943;
       }
@@ -48,12 +54,45 @@
 
       .info {
         margin-bottom: 30px;
+
+        .orange {
+          color: #f26943;
+        }
+      }
+
+      .main-form {
+
+        .form-group {
+          textarea {
+            height: 120px;
+          }
+        }
+
+        .special-row {
+          display: flex;
+          justify-content: space-between;
+          .special {
+            width: 49%;
+            height: 55px;
+          }
+          .green {
+            padding: 14px 40px;
+          }
+        }
       }
     }
-
   }
 }
 
+@media (min-width: 400px) {
 
+  .container {
+    margin: 0px;
+  }
+}
 
-//
+@media (min-width: 768px) {
+  .container {
+    margin: 20px;
+  }
+}

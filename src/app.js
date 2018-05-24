@@ -1,7 +1,13 @@
 import 'bootstrap';
 import './scss/app.scss';
-
+import $ from 'jquery';
 // console.log("here")
 $('#text').on('input', function(){
-  console.log("test")
+  name = $(this).val();
+
+  if (name.length < 1){
+    alert("field is required")
+  } else {
+
+  }
 });

@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
   <title>Golin</title>
 </head>
 <body>
@@ -10,11 +12,11 @@
     <div class="row">
       <div class="col-md-12">
 
-        <div class="message">
+        <div class="message animated fadeInLeft">
           <p>$167 still needed for this project</p>
         </div>
 
-        <div class="form-box">
+        <div class="form-box animated fadeInRight">
 
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -24,50 +26,46 @@
           <div class="form-box__content">
 
             <div class="info">
-              <p><span>Only {{3}} days left</span> to fund this project.</p>
+              <p><span class="orange">Only {{3}} days left</span> to fund this project.</p>
               <p>Join the {{42}} other donors who have already supported this project. Every dollar helps.</p>
             </div>
 
-            <form class="" action="index.html" method="post">
+            <form class="main-form" action="index.html" method="post">
 
               <div class="form-group">
-                <input type="text" class="form-control" id="text" value="John Doe">
+                <input type="text" class="form-control" id="text" placeholder="John Doe">
               </div>
 
               <div class="form-group">
-                <input type="email" class="form-control" id="email" value="john@example.com">
+                <input type="email" class="form-control"  id="email" placeholder="john@example.com">
               </div>
 
               <div class="form-group">
-                <input type="number" class="form-control" id="phone" value="+44 7777 888 999">
+                <input type="number" class="form-control" id="phone" placeholder="+44 7777 888 999">
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control" id="" value="424242424242424">
+                <input type="number" class="form-control" id="" placeholder="424242424242424">
                 <small id="card-number" class="form-text text-muted">Long number on front of your card</small>
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control" id="card-pin" value="424">
+                <input type="number" class="form-control" id="card-pin" placeholder="424">
                 <small id="" class="form-text text-muted">The 3 digits to the right if the signature strip located on the back of your card</small>
               </div>
 
               <div class="form-group">
-                <input type="date" class="form-control" id="date" value="">
+                <input type="date" class="form-control" id="date" placeholder="">
               </div>
 
               <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Hello there, i'd like to donate you some money
-                </textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hello there, I'd like to donate you some money"></textarea>
               </div>
-
 
               <div class="form-group special-row">
                 <input type="money" class="form-control special" id="amount" placeholder="$ 50">
-                <button type="submit" class="btn btn-primary mb-2">Give now</button>
+                <button type="submit" class="btn btn-success mb-2 green">Give now</button>
               </div>
-
-
             </form>
           </div>
         </div>
