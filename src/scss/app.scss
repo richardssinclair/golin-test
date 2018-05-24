@@ -1,1 +1,59 @@
 @import "~bootstrap/scss/bootstrap";
+
+.container {
+  margin: 50px;
+
+  .message {
+    background-color: #4b4b4b;
+    color: #fff;
+    border-radius: .2em;
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .message:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 85%;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: #4b4b4b;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -8px;
+  }
+  .form-box {
+
+    width: 30%;
+    border: 1px solid #d6d6d6;
+
+    .progress {
+      border-radius: 0;
+      .progress-bar {
+        background-color: #f26943;
+      }
+    }
+
+    &__content {
+      padding: 20px;
+
+      .info {
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+}
+
+
+
+//
