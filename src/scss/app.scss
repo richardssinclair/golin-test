@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import "~animate.css/animate.css";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -18,6 +19,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 12px;
+
     p {
       margin-bottom: 0;
     }
@@ -44,6 +46,7 @@ body {
     .progress {
       border-radius: 0;
       height: 0.6rem;
+
       .progress-bar {
         background-color: #f26943;
       }
@@ -63,20 +66,23 @@ body {
       .main-form {
 
         .form-group {
+
           textarea {
             height: 120px;
           }
+
           a {
             font-style: italic;
             text-decoration: none;
-            color: #28a745;
           }
+
           #name-error {
             color: red;
             margin-bottom: 0;
             font-size: .8em;
             display: none;
           }
+
           #email-error {
             color: red;
             margin-bottom: 0;
@@ -88,10 +94,12 @@ body {
         .special-row {
           display: flex;
           justify-content: space-between;
+
           .special {
             width: 49%;
             height: 55px;
           }
+
           .green {
             padding: 14px 40px;
           }
@@ -109,6 +117,7 @@ body {
 }
 
 @media (min-width: 768px) {
+
   .container {
     margin: 20px;
   }
